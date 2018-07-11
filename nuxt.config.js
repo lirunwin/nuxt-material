@@ -31,6 +31,7 @@ module.exports = {
   */
   css: [
     'vue-material/dist/vue-material.min.css',
+    '@/assets/sass/_vue-material-theme.scss',
     '@/assets/sass/main.scss'
   ],
 
@@ -57,6 +58,7 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
+    vendor: ['vue-material'],
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {

@@ -1,9 +1,7 @@
-<template lang="html">
-  <div class="container">
-    <h5 class="page-title">
-      发布兼职
-    </h5>
-    <form class="post-form">
+<template lang="html">  
+  <div class="md-layout md-alignment-center-center">
+    <div class="md-layout-item md-size-80 page-title">发布招聘</div>
+    <form class="md-layout-item md-size-80 post-form rounded md-elevation-1">
       <div class="card">
         <div class="row">
           <div class="col s6">

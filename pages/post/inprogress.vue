@@ -1,22 +1,21 @@
 <template lang="html">
-  <page>
+  <div class="md-layout md-alignment-center">
     <page-title>进行中</page-title>
-    <form>
-      <tool-bar></tool-bar>
+    <form class="md-layout-item md-size-80">
     </form>
-    <InProgressItem></InProgressItem>
-  </page>
+    <div class="md-layout-item md-size-80">
+      <InProgressItem></InProgressItem>
+    </div>
+  </div>
 </template>
 
 <script>
 import PageTitle from '@/components/PageTitle';
-import Page from '@/components/Page';
 import ToolBar from '@/components/ToolBar';
 import InProgressItem from '@/components/InProgressItem';
 export default {
   components: {
     PageTitle,
-    Page,
     ToolBar,
     InProgressItem
   }

@@ -1,5 +1,5 @@
 <template lang="html">
-    <h5 class="col s12 page-title"><slot>标题</slot></h5>
+  <div class="md-layout-item md-size-80 page-title"><slot>标题</slot></div>
 </template>
 
 <script>

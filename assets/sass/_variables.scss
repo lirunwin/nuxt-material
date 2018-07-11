@@ -1,14 +1,13 @@
 $primary-color: #83976b;
-$primary-color-light: #a7b498;
-// $primary-color-dark: #83976b;
+$primary-color-light: #9fb584;
 $secondary-color: #9fb584;
 
 $input-border-color: $secondary-color;
 // $button-border: 1px solid $secondary-color;
 // $button-radius: 3px;
-
+$border-radius: 3px;
 $input-cus-border-color: $secondary-color;
-$input-cus-border-radius: 3px;
+$input-cus-border-radius: $border-radius;
 $input-cus-bg-color: #f9f9f9;
 
 
@@ -21,8 +20,7 @@ $white: #FFFFFF;
 $grey-color: #ececec;
 $border-color: $grey-color;
 $bg-color: $grey-color;
-.z-depth-1 {
-  box-shadow: 0 2px 2px 0 rgba($primary-color, 0.14),
-              0 3px 1px -2px rgba($primary-color, 0.12),
-              0 1px 5px 0 rgba($primary-color, 0.2);
-}
+
+$md-elevation-umbra-color: rgba($primary-color, .2) !global;
+$md-elevation-penumbra-color: rgba($primary-color, .14) !global;
+$md-elevation-ambient-color: rgba($primary-color, .12) !global;

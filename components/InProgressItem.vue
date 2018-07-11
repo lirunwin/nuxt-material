@@ -1,17 +1,17 @@
 <template lang="html">
-  <div class="card inprogress-item">
-    <div class="row inprogress-item-head">
-      <div class="col s6 inprogress-item-title">
+  <div class="inprogress-item md-layout rounded md-elevation-1 bg-white">
+    <div class="md-layout-item md-size-100 md-layout inprogress-item-head">
+      <div class="md-layout-item md-size-50 inprogress-item-title">
         直聘信用卡专员年薪20万
         <span class="red-text">120-180元/天</span>
       </div>
-      <div class="col s6 inprogress-item-status right-align">
+      <div class="md-layout-item md-size-50 inprogress-item-status right-align">
         <span class="red-text">审核失败，招聘信息中不能包含违规内容</span>
         正在招聘中
       </div>
     </div>
-    <div class="row inprogress-item-content">
-      <div class="col s8">
+    <div class="md-layout-item md-size-100 md-layout inprogress-item-content">
+      <div class="md-layout-item md-size-66">
         <div>
           <span>基本工资：80元/天</span>
           <span>提成：87/单</span>
@@ -26,11 +26,13 @@
           <tag>底薪加提成</tag><tag>平台代发</tag><tag>日结</tag><tag>不限时间</tag><tag>不限地点</tag>
         </div>
       </div>
-      <div class="col s4">
-        <InProgressStatus></InProgressStatus>
-        <button type="button" class="btn">结束招聘</button>
-        <button type="button" class="btn">任务设置</button>
-        <nuxt-link :to="{path: '/inprogress/detail'}" class="">任务详情</nuxt-link>
+      <div class="md-layout-item md-size-33 md-layout md-alignment-center-space-between">
+        <InProgressStatus class="md-layout-item md-size-100 text-center"></InProgressStatus>
+        <div class="md-layout-item md-size-100">
+          <md-button type="button" class="md-primary md-raised ml-0">结束招聘</md-button>
+          <md-button type="button" class="md-primary md-raised">任务设置</md-button>
+          <md-button type="button" class="md-primary mr-0" to="/post/detail">任务详情</md-button>
+        </div>
       </div>
     </div>
   </div>

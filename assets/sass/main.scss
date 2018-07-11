@@ -21,17 +21,29 @@ $white: #FFFFFF;
 $grey-color: #ececec;
 $border-color: $grey-color;
 $bg-color: $grey-color;
-.z-depth-1 {
-  box-shadow: 0 2px 2px 0 rgba($primary-color, 0.14),
-              0 3px 1px -2px rgba($primary-color, 0.12),
-              0 1px 5px 0 rgba($primary-color, 0.2);
+
+.rounded {
+  border-radius: $border-radius;
+}
+.bg-white {
+  background:$white;
+}
+.bg-primary {
+  background: $primary-color;
 }
 
-@import "~vue-material/dist/theme/engine"; // Import the theme engine
-
-@include md-register-theme("default", (
-  primary: #83976b, // The primary color of your brand
-  accent: #a7b498 // The secondary color of your brand
-));
-
-@import "~vue-material/dist/theme/all"; // Apply the theme
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.ml-0 {
+  margin-left: 0;
+}
+.mr-0 {
+  margin-right: 0;
+}
