@@ -31,7 +31,6 @@ module.exports = {
   */
   css: [
     'vue-material/dist/vue-material.min.css',
-    '@/assets/sass/_vue-material-theme.scss',
     '@/assets/sass/main.scss'
   ],
 

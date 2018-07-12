@@ -15,9 +15,7 @@
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style lang="scss">
@@ -25,36 +23,30 @@ export default {
   min-height: calc(100vh - 12.5rem);
   background: $white;
   .post-shortcut {
-      width: 35%;
-      text-align: center;
-      background: $primary-color-light;
-      max-width: 300px;
+    width: 35%;
+    text-align: center;
+    background: $primary-color-light;
+    max-width: 300px;
+    display: block;
+    &:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+    .iconfont {
       display: block;
-      &:hover {
-        text-decoration: none;
-        color: inherit;
-      }
-      .iconfont {
-          display: block;
-          font-size: 5.5rem;
-          color: $white;
-          line-height: 1;
-          padding-top: 1rem;
-      }
-      +.post-shortcut {
-          margin-left: 10%;
-      }
-      h6 {
-          color: $white;
-          margin-bottom: 1.5rem;
-          margin-top: 0;
-      }
+      font-size: 5.5rem;
+      color: $white;
+      line-height: 1;
+      padding-top: 1rem;
+    }
+    + .post-shortcut {
+      margin-left: 10%;
+    }
+    h6 {
+      color: $white;
+      margin-bottom: 1.5rem;
+      margin-top: 0;
+    }
   }
-}
-.page-title {
-  font-size: $size3;
-  font-weight: 500;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 </style>

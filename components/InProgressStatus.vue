@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="md-layout center-align">
+  <div class="md-layout text-center">
     <div class="md-layout-item md-size-33 push-s3">
       <div>100</div>
       <div>拟招聘</div>

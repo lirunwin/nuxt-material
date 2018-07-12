@@ -1,8 +1,11 @@
+@import "./vue-material-theme";
 $primary-color: #83976b;
 $primary-color-light: #a7b498;
 // $primary-color-dark: #83976b;
 $secondary-color: #9fb584;
-
+$danger-color: md-get-palette-color(red, A200);
+$success-color: md-get-palette-color(green, 900);
+$warning-color: md-get-palette-color(orange, A700);
 $input-border-color: $secondary-color;
 // $button-border: 1px solid $secondary-color;
 // $button-radius: 3px;
@@ -22,8 +25,15 @@ $grey-color: #ececec;
 $border-color: $grey-color;
 $bg-color: $grey-color;
 
+html {
+  font-size: 16px;
+}
+body {
+  font-size: 1rem;
+}
 .rounded {
   border-radius: $border-radius;
+  overflow: hidden;
 }
 .bg-white {
   background:$white;
@@ -41,9 +51,39 @@ $bg-color: $grey-color;
 .text-left {
   text-align: left;
 }
+.text-danger {
+  color: $danger-color;
+}
+.text-success {
+  color: $success-color;
+}
+.text-warning {
+  color: $warning-color;
+}
+.text-bold {
+  font-weight: 600;
+}
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .ml-0 {
   margin-left: 0;
 }
 .mr-0 {
   margin-right: 0;
+}
+.mt-3 {
+  margin-top: $size3 !important;
+}
+.py-3 {
+  padding-top: $size3;
+  padding-bottom: $size3;
+}
+.border-bottom {  
+  border-bottom: 1px $border-color solid;
+}
+.line-height-2 {
+  line-height: 2;
 }
