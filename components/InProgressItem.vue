@@ -69,7 +69,7 @@ export default {
         line-height: 1.8;
         span {
             &+span {
-                margin-left: 3rem;
+                margin-left: 2rem;
             }
         }
     }
