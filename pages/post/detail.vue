@@ -80,8 +80,20 @@
                 </md-tab>
 
                 <md-tab id="tab-1" md-label="申请审批" :md-template-data="{isDorpDown: true}">
-                    <YesOrNo></YesOrNo>
-                    <p>申请审批</p>
+                    <form class="md-layout inprogress-detail-search">
+                        <div class="md-layout-item md-size-50">                            
+                            <md-checkbox v-model="selectAll" class="md-primary selectAll">全选</md-checkbox>
+                            <YesOrNo></YesOrNo>
+                        </div>
+                        <div class="md-layout-item md-size-50 text-right">
+                            <DropDown class="mr-0"></DropDown>
+                            <TextField class="mr-0"></TextField>
+                            <md-button class="md-primary md-raised md-dense">搜索</md-button>
+                        </div>
+                    </form>
+                    <div class="inprogress-detail-review-item">
+                        asdsadas
+                    </div>
                 </md-tab>
 
                 <md-tab id="tab-2" md-label="已招募人员">
@@ -100,14 +112,21 @@ import PageTitle from "@/components/PageTitle";
 import Tag from "@/components/Tag";
 import InProgressStatus from "@/components/InProgressStatus";
 import YesOrNo from "@/components/YesOrNo";
+import DropDown from "@/components/DropDown";
+import TextField from "@/components/TextField";
 export default {
   name: "Detial",
   components: {
     PageTitle,
     Tag,
     InProgressStatus,
-    YesOrNo
-  }
+    YesOrNo,
+    DropDown,
+    TextField
+  },
+  data: () => ({
+    selectAll: true
+  })
 };
 </script>
 <style lang="scss">
@@ -117,6 +136,22 @@ export default {
   }
   .inprogress-detail-tabs {
     width: 100%;
+  }
+  .selectAll {
+      vertical-align: top;
+  }
+  .inprogress-detail-search > div{
+      display: flex;
+      align-items: center;
+      &:last-child {
+          justify-content: flex-end;
+      }
+  }
+  .inprogress-detail-review-item {
+      border: 1px $border-color solid;
+      border-radius: $border-radius;
+      padding: 1rem;
+      margin-top: 1rem;
   }
 }
 </style>
