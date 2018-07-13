@@ -5,45 +5,62 @@ module.exports = {
   mode: 'universal',
 
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
     title: pkg.name,
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+    meta: [{
+      charset: 'utf-8'
+    },
+    {
+      name: 'viewport',
+      content: 'width=device-width, initial-scale=1'
+    },
+    {
+      hid: 'description',
+      name: 'description',
+      content: pkg.description
+    }
     ],
     link: [
       // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: '//at.alicdn.com/t/font_735946_s7yy2uibbq.css' },
-      { rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Material+Icons' }
+      {
+        rel: 'stylesheet',
+        href: '//at.alicdn.com/t/font_735946_15mgvzef6vx.css'
+      },
+      {
+        rel: 'stylesheet',
+        href: '//fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Material+Icons'
+      }
     ]
   },
 
   /*
-  ** Customize the progress-bar color
-  */
-  loading: { color: '#FFFFFF' },
+   ** Customize the progress-bar color
+   */
+  loading: {
+    color: '#FFFFFF'
+  },
 
   /*
-  ** Global CSS
-  */
+   ** Global CSS
+   */
   css: [
     'vue-material/dist/vue-material.min.css',
     '@/assets/sass/main.scss'
   ],
 
   /*
-  ** Plugins to load before mounting the App
-  */
+   ** Plugins to load before mounting the App
+   */
   plugins: [
-    '@/plugins/vuematerial'
+    '@/plugins/vuematerial',
+    '@/plugins/global'
   ],
 
   /*
-  ** Nuxt.js modules
-  */
+   ** Nuxt.js modules
+   */
   modules: [
     ['nuxt-sass-resources-loader', [
       '@/assets/sass/_variables.scss',
@@ -51,12 +68,12 @@ module.exports = {
   ],
 
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     /*
-    ** You can extend webpack config here
-    */
+     ** You can extend webpack config here
+     */
     vendor: ['vue-material'],
     extend(config, ctx) {
       // Run ESLint on save

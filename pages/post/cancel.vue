@@ -1,6 +1,6 @@
 <template>
   <page-container class="inprogress-done">
-    <page-title>已完成</page-title>
+    <page-title>已取消</page-title>
     <div class="inprogress-done-search">
       <md-toolbar md-elevation="1" class="rounded">
         <DropDown></DropDown>
@@ -13,23 +13,20 @@
       <md-table md-card class="w-100 rounded data-table">
         <md-table-row>
           <md-table-head>任务标题</md-table-head>
-          <md-table-head>拟招聘</md-table-head>
-          <md-table-head>实招聘</md-table-head>
-          <md-table-head>任务类型</md-table-head>
-          <md-table-head>发布时间</md-table-head>
-          <md-table-head>结束时间</md-table-head>
-          <md-table-head>任务周期</md-table-head>
+          <md-table-head>职位类型</md-table-head>
+          <md-table-head>工作类型</md-table-head>
+          <md-table-head>创建时间</md-table-head>
+          <md-table-head>取消时间</md-table-head>
         </md-table-row>
 
         <md-table-row v-for="n of 20" :key="n">
           <md-table-cell>多功能语言之间的互译功能</md-table-cell>
-          <md-table-cell>233</md-table-cell>
-          <md-table-cell>260</md-table-cell>
+          <md-table-cell>翻译</md-table-cell>
           <md-table-cell>兼职</md-table-cell>
           <md-table-cell>2018-08-08</md-table-cell>
           <md-table-cell>2018-09-09</md-table-cell>
-          <md-table-cell>2018-09-10 - 2018-10-10 </md-table-cell>
         </md-table-row>
+
       </md-table>
     </div>
   </page-container>
@@ -41,7 +38,7 @@ import TextField from "@/components/TextField";
 import DataTable from "@/components/DataTable";
 
 export default {
-  name: "Done",
+  name: "Cancel",
   components: {
     PageTitle,
     DropDown,

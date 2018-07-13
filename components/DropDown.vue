@@ -4,8 +4,8 @@
     <div class="dropdown-option">
         // TODO: this is kidding, but i am run out of time
     </div> -->
-    <select> 
-      <option value="1">默认排序</option>
+    <select>
+      <option value="1">请选择</option>
       <option value="1">选项2</option>
       <option value="1">选项3</option>
       <option value="1">选项4</option>
@@ -15,8 +15,8 @@
 
 <script>
 export default {
-  name: 'DropDown'
-}
+  name: "DropDown"
+};
 </script>
 
 <style lang="scss">
@@ -45,6 +45,8 @@ export default {
     height: 100%;
     outline: none;
     display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 </style>

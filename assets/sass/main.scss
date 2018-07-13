@@ -2,20 +2,23 @@
 $danger-color: md-get-palette-color(red, A200);
 $success-color: md-get-palette-color(green, 900);
 $warning-color: md-get-palette-color(orange, A700);
-
 html {
   font-size: 16px;
 }
+
 body {
   font-size: 1rem;
 }
+
 .rounded {
   border-radius: $border-radius;
   overflow: hidden;
 }
+
 .bg-white {
-  background:$white;
+  background: $white;
 }
+
 .bg-primary {
   background: $primary-color;
 }
@@ -23,45 +26,124 @@ body {
 .text-center {
   text-align: center;
 }
+
 .text-right {
   text-align: right;
 }
+
 .text-left {
   text-align: left;
 }
+
 .text-danger {
   color: $danger-color;
 }
+
 .text-success {
   color: $success-color;
 }
+
 .text-warning {
   color: $warning-color;
+}
+.text-accent {
+  color: $accent-color;
 }
 .text-bold {
   font-weight: 600;
 }
+
 .text-truncate {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
 .ml-0 {
   margin-left: 0 !important;
 }
+
 .mr-0 {
   margin-right: 0 !important;
+}
+.m-0 {
+  margin: 0 !important;
 }
 .mt-3 {
   margin-top: $size3 !important;
 }
+
 .py-3 {
   padding-top: $size3;
   padding-bottom: $size3;
 }
-.border-bottom {  
+.p-0 {
+  padding: 0 !important;
+}
+.border-bottom {
   border-bottom: 1px $border-color solid;
+}
+.border {
+  border: 1px $border-color solid;
+}
+.line-height-1 {
+  line-height: 1;
 }
 .line-height-2 {
   line-height: 2;
+}
+.line-height-3 {
+  line-height: 3;
+}
+.pointer {
+  cursor: pointer;
+  user-select: none;
+}
+.spacer {
+  flex: 1;
+  min-height: 1px;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.data-table {
+  table {
+    margin-right: -1px;
+  }
+  .md-table-head {
+    text-align: center;
+    background: $bg-color;
+    &+.md-table-head {
+      border-left: 1px darken($border-color, 5%) solid;
+    }
+  }
+  .md-table-cell+.md-table-cell {
+    border-left: 1px $border-color solid;
+    text-align: center;
+  }
+  .md-checkbox {
+    vertical-align: middle;
+  }
+  .md-table-cell-container {
+    padding: 0 !important;
+  }
+  .md-table-head-label {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .md-layout-item + .md-layout-item {
+    border-left:  1px $border-color solid;
+  }
+  .md-layout-item {
+    border-bottom: 1px $border-color solid;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  .md-layout {
+    &:last-child .md-layout-item {
+      border-bottom: 0;
+    }
+  }
 }

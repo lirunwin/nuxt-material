@@ -41,48 +41,48 @@
 </template>
 
 <script>
-import Tag from '@/components/Tag';
-import InProgressStatus from '@/components/InProgressStatus';
+import Tag from "@/components/Tag";
+import InProgressStatus from "@/components/InProgressStatus";
 export default {
-  name: 'InProgressItem',
+  name: "InProgressItem",
   components: {
     Tag,
     InProgressStatus
   }
-}
+};
 </script>
 
 <style lang="scss">
 .inprogress-item {
-    font-size: $size2;
-    padding: 1rem;
+  font-size: $size2;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  .inprogress-item-head {
+    padding-bottom: 1rem;
     margin-bottom: 1rem;
-    .inprogress-item-head {
-        padding-bottom: 1rem;
-        margin-bottom: 1rem;
-        .inprogress-item-status {
-             flex:0 0 6em;
-        }
-        .inprogress-item-price {
-          flex:0 0 8em;
-          margin-right: 1rem;
-          text-align: left;
-        }
+    .inprogress-item-status {
+      flex: 0 0 6em;
     }
+    .inprogress-item-price {
+      flex: 0 0 8em;
+      margin-right: 1rem;
+      text-align: left;
+    }
+  }
 
-    .inprogress-item-content {
-        line-height: 1.8;
-        span {
-            &+span {
-                margin-left: 2rem;
-            }
-            >span {
-              font-size: $size1;
-            }
-        }
+  .inprogress-item-content {
+    line-height: 1.8;
+    span {
+      & + span {
+        margin-left: 2rem;
+      }
+      > span {
+        font-size: $size1;
+      }
     }
-    .inprogress-item-tag {
-        padding: 0.5rem 0;
-    }
+  }
+  .inprogress-item-tag {
+    padding: 0.5rem 0;
+  }
 }
 </style>
