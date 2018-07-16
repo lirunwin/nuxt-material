@@ -1,5 +1,6 @@
 const pkg = require('./package')
 const nodeExternals = require('webpack-node-externals')
+const resolve = require('path').resolve
 
 module.exports = {
   mode: 'universal',
@@ -20,13 +21,15 @@ module.exports = {
       hid: 'description',
       name: 'description',
       content: pkg.description
-    }
-    ],
+    }],
+    bodyAttrs: {
+      // class: 'md-scrollbar'
+    },
     link: [
       // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
-        href: '//at.alicdn.com/t/font_735946_15mgvzef6vx.css'
+        href: '//at.alicdn.com/t/font_735946_1dlcy717ngq.css'
       },
       {
         rel: 'stylesheet',
@@ -34,7 +37,9 @@ module.exports = {
       }
     ]
   },
-
+  router: {
+    linkExactActiveClass: 'active'
+  },
   /*
    ** Customize the progress-bar color
    */
@@ -66,7 +71,6 @@ module.exports = {
       '@/assets/sass/_variables.scss',
     ]],
   ],
-
   /*
    ** Build configuration
    */
@@ -92,6 +96,25 @@ module.exports = {
           })
         ]
       }
-    }
+    },
+    // loaders:[
+    //   {
+    //     test: /\.svg$/,
+    //     include: /static\/svg/,
+    //     loader: 'svg-sprite-loader?' + JSON.stringify({
+    //       name: '[name]',
+    //       prefixize: false
+    //     })
+    //   },
+    //   {
+    //     test: /\.(png|jpg|gif|svg)$/,
+    //     loader: 'url-loader',
+    //     exclude: /static\/svg/,
+    //     options: {
+    //       limit: 1000, // 1K limit
+    //       name: 'img/[name].[hash:8].[ext]'
+    //     }
+    //   }
+    // ]
   }
 }

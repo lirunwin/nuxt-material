@@ -1,5 +1,5 @@
 <template>
-  <div class="dropdown">
+  <label class="dropdown">
     <!-- <input type="text" readonly class="dropdown-input">
     <div class="dropdown-option">
         // TODO: this is kidding, but i am run out of time
@@ -10,7 +10,7 @@
       <option value="1">选项3</option>
       <option value="1">选项4</option>
     </select>
-  </div>
+  </label>
 </template>
 
 <script>
@@ -21,14 +21,14 @@ export default {
 
 <style lang="scss">
 .dropdown {
-  margin: 6px 8px;
   border: 1px $primary-color solid;
   border-radius: $border-radius;
-  display: inline-block;
+  display: block;
   max-width: 100%;
   height: 32px;
-  width: auto;
+  margin-right: $size1;
   overflow: hidden;
+  background: $input-bg-color;
   cursor: pointer;
   position: relative;
   .dropdown-input {
@@ -41,12 +41,10 @@ export default {
   }
   select {
     border: none;
-    background: $input-bg-color;
+    background:transparent;
     height: 100%;
+    width: 100%;
     outline: none;
-    display: inline-block;
-    padding-left: 5px;
-    padding-right: 5px;
   }
 }
 </style>

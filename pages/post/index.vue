@@ -1,17 +1,17 @@
-<template lang="html">
-  <div class="md-layout md-alignment-center-center">
-      <div class="md-layout-item md-size-80 page-title">发布招聘</div>
-      <section class="md-layout-item md-size-80 md-layout md-alignment-center-center md-elevation-1 rounded post-index">        
-        <nuxt-link :to="{path: '/post/parttime'}" class="post-shortcut md-elevation-1 rounded">
-          <i class="iconfont icon-parttime"></i>
-          <h6>发布兼职</h6>
-        </nuxt-link>
-        <nuxt-link :to="{path: '/post/train'}" class="post-shortcut md-elevation-1 rounded">
-          <i class="iconfont icon-train"></i>
-          <h6>发布实习</h6>
-        </nuxt-link>
-      </section>
-    </div>
+<template lang="html">        
+  <div class="md-layout md-alignment-center">
+    <page-title class="md-layout-item md-size-80">发布招聘</page-title>
+    <section class="md-layout-item md-size-80 md-layout md-alignment-center-center md-elevation-1 rounded post-index">        
+      <nuxt-link :to="{path: '/post/parttime'}" class="post-shortcut md-elevation-1 rounded">
+        <i class="iconfont icon-parttime"></i>
+        <h6>发布兼职</h6>
+      </nuxt-link>
+      <nuxt-link :to="{path: '/post/train'}" class="post-shortcut md-elevation-1 rounded">
+        <i class="iconfont icon-train"></i>
+        <h6>发布实习</h6>
+      </nuxt-link>
+    </section>
+  </div>
 </template>
 
 <script>
