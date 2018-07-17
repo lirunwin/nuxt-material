@@ -30,10 +30,6 @@ module.exports = {
       {
         rel: 'stylesheet',
         href: '//at.alicdn.com/t/font_735946_1dlcy717ngq.css'
-      },
-      {
-        rel: 'stylesheet',
-        href: '//fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Material+Icons'
       }
     ]
   },
@@ -43,12 +39,13 @@ module.exports = {
   render: {
     resourceHints: false
   },
+  generate: {
+    minify:false
+  },
   /*
    ** Customize the progress-bar color
    */
-  loading: {
-    color: '#FFFFFF'
-  },
+  loading: false,
 
   /*
    ** Global CSS
@@ -81,6 +78,7 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
+    // publicPath: '/scout-b/assets/',
     extractCSS: {
       allChunks: true,
     },

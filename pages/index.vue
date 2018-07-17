@@ -186,7 +186,7 @@
       </div>
     </div>
   </div>
-  <footer>
+  <footer class="footer">
     <div class="container">
       <nuxt-link to="/info/about" class="text-white">关于我们</nuxt-link>
       <nuxt-link to="/info/about" class="text-white">联系我们</nuxt-link>
@@ -354,17 +354,6 @@ export default {
       margin-right: 0.5rem;
     }
   }
-}
-footer {
-  background: $black;
-  color: $white;
-  text-align: center;
-  font-size: size2;
-  a + a {
-    margin-left: 3rem;
-  }
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 </style>
 

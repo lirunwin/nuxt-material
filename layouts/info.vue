@@ -19,7 +19,7 @@
     <div class="info-main-content">
       <nuxt />
     </div>
-    <footer>
+    <footer class="footer">
       <div class="container">
         <nuxt-link to="/info/about" class="text-white">关于我们</nuxt-link>
         <nuxt-link to="/info/contact" class="text-white">联系我们</nuxt-link>
@@ -46,17 +46,18 @@ export default {
   top: 0;
   width: 100%;
   z-index: 999;
+  .iconfont.icon-tel {
+    background-color: $white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    border: 2px $primary-color solid;
+    color: $primary-color;
+    margin-right: 0.625rem;
+  }
 }
-.iconfont.icon-tel {
-  background-color: $white;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  border: 2px $primary-color solid;
-  color: $primary-color;
-  margin-right: 0.625rem;
-}
-footer {
+
+footer.footer {
   background: $black;
   color: $white;
   text-align: center;

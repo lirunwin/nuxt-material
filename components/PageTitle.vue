@@ -10,7 +10,7 @@ export default {
 
 <style lang="scss">
 .page-title {
-  font-size: $size4;
+  font-size: $size3 * 1.25;
   font-weight: 600;
   padding: 2rem 0;
 }

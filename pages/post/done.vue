@@ -38,22 +38,14 @@
 import PageTitle from "@/components/PageTitle";
 import DropDown from "@/components/DropDown";
 import TextField from "@/components/TextField";
-import DataTable from "@/components/DataTable";
 
 export default {
   name: "Done",
   components: {
     PageTitle,
     DropDown,
-    TextField,
-    DataTable
+    TextField
   }
 };
 </script>
-
-
-<style lang="scss">
-.inprogress-done {
-}
-</style>
 

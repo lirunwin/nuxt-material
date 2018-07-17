@@ -86,6 +86,7 @@ export default {
   i.iconfont {
     position: absolute;
     left: 0.5rem;
+    top:0;
     font-size: $size1;
     display: inline-block;
     height: 32px;

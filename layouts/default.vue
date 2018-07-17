@@ -1,11 +1,11 @@
 <template>
   <div>
-    <md-toolbar class="md-primary navbar" md-elevation="0" v-if="!hideBars">
+    <md-toolbar class="md-primary" id="navbar" md-elevation="0" v-if="!hideBars">
       <!-- <nuxt-link to="/" class="iconfont icon-scout"></nuxt-link> -->
-      <nuxt-link to="/"><img src="@/static/img/logo.png" alt="logo"></nuxt-link>
+      <nuxt-link to="/"><img src="@/static/img/logo_light.png" alt="logo"></nuxt-link>
       <h3 class="md-title">企业端管理系统</h3>
     </md-toolbar>
-    <md-drawer md-permanent="clipped" class="sidebar md-elevation-1 md-scrollbar" v-if="!hideBars">
+    <md-drawer md-permanent="clipped" id="sidebar" class="md-elevation-1 md-scrollbar" v-if="!hideBars">
       <md-list>
         <md-subheader class="text-bold">招聘信息</md-subheader>
         <md-list-item to="/post">
@@ -75,8 +75,8 @@
     </md-drawer>
     <div class="md-scrollbar" :class=" { 'main-content': !hideBars } ">
       <nuxt />
-      <footer class="text-center footer md-caption" v-if="!hideBars">
-          版权所有：荣利信息咨询有限公司 {{hideBars}}
+      <footer class="text-center footer-inner md-caption" v-if="!hideBars">
+          版权所有：荣利信息咨询有限公司
       </footer>
     </div>
   </div>
@@ -96,11 +96,11 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 body {
   height: 100%;
 }
-.navbar {
+#navbar {
   padding-left: 0;
   position: fixed;
   top: 0;
@@ -124,7 +124,7 @@ body {
     padding-left: 1rem;
   }
 }
-.sidebar {
+#sidebar {
   padding-left: 2rem;
   padding-right: 2rem;
   width: $sidebar-width;
@@ -166,7 +166,7 @@ body {
   min-height: 100vh;
   position: relative;
 }
-footer.footer {
+footer.footer-inner {
   width: 100%;
   padding:1rem 0 1rem $sidebar-width;
   font-size: $size1;
