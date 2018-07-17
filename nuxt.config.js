@@ -40,6 +40,9 @@ module.exports = {
   router: {
     linkExactActiveClass: 'active'
   },
+  render: {
+    resourceHints: false
+  },
   /*
    ** Customize the progress-bar color
    */
@@ -78,6 +81,16 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
+    extractCSS: {
+      allChunks: true,
+    },
+    filenames: {
+      css: 'common.css',
+      manifest: 'manifest.js',
+      vendor: 'common.js',
+      app: 'app.js',
+      chunk: '[name].js'
+    },
     vendor: ['vue-material'],
     extend(config, ctx) {
       // Run ESLint on save

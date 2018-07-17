@@ -87,7 +87,6 @@ export default {
   p {
     text-indent: 2em;
     line-height: 25px;
-    font-size: $size2;
   }
   .md-subheading {
     color: $grey-color-dark;

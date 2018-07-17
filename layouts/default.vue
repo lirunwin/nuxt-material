@@ -1,7 +1,8 @@
 <template>
   <div>
     <md-toolbar class="md-primary navbar" md-elevation="0" v-if="!hideBars">
-      <nuxt-link to="/" class="iconfont icon-scout"></nuxt-link>
+      <!-- <nuxt-link to="/" class="iconfont icon-scout"></nuxt-link> -->
+      <nuxt-link to="/"><img src="@/static/img/logo.png" alt="logo"></nuxt-link>
       <h3 class="md-title">企业端管理系统</h3>
     </md-toolbar>
     <md-drawer md-permanent="clipped" class="sidebar md-elevation-1 md-scrollbar" v-if="!hideBars">

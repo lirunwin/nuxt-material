@@ -4,7 +4,8 @@
     <div class="container h-100">
       <div class="md-layout index-top-bar md-alignment-center">
         <div class="md-layout-item flex-0">
-          <i class="iconfont icon-scout logo caption"></i>
+          <!-- <i class="iconfont icon-scout logo caption"></i> -->
+          <nuxt-link to="/"><img src="@/static/img/logo.png" alt="logo"></nuxt-link>
         </div>
         <div class="spacer"></div>
         <div class="md-layout-item flex-0 md-layout md-alignment-center">
